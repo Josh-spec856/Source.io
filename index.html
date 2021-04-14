@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <style>
+         @import url(https://fonts.googleapis.com/css?family=Bungee);
+         @import url(https://fonts.googleapis.com/css?family=Passion+One);
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            background-color:rgb(195, 255, 195);
+            font-family: 'Passion One';
+        }
+#header{
+    background-color: rgb(112, 255, 112);
+    max-width: 100%;
+    height: 60px;
+    box-shadow: 5px 15px 10px -15px rgb(49, 49, 49);
+}
+h1{
+    text-align: center;
+    font-family: 'Bungee';
+}
+
+#bx{
+    width: 200px;
+    height: 100px;
+    display: block;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 5px 5px 5px -5px #333;
+}
+#bx:hover{
+    box-shadow: 8px 9px 10px -5px rgb(46, 46, 46);
+}
+h4,p{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 46, 0);
+}
+/* Large desktop */
+@media (min-width: 1200px) { 
+ /* your code */
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+/* your code */
+ }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+/* your code */
+ }
+
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+/* your code */
+ }
+
+    </style>
+</head>
+<body>
+    <div id="header"><h1>FOR THE BOYS ONLY!</h1></div>
+    <div id="bx" data-aos="fade-up">
+        <h4>LEARNING ACTIVITY</h4><br>
+        <p>Sir Christian</p><br>
+        <a href="download.html"><p>Click Me!</p></a>
+    </div>
+
+    <script>
+        AOS.init({
+           duration:1200,
+       });
+       </script>
+</body>
+</html>
