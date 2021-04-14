@@ -67,11 +67,26 @@ a{
 @media (max-width: 480px) { 
 /* your code */
  }
+[data-aos="new-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
 
+  &.aos-animate {
+    opacity: 1;
+  }
+
+  @media screen and (min-width: 768px) {
+    transform: translateX(100px);
+
+    &.aos-animate {
+      transform: translateX(0);
+    }
+  }
+}
     </style>
 </head>
 <body>
-    <div id="header"><h1>FOR THE BOYS ONLY!</h1></div>
+    <div id="header"><h1 data-aos="new-animation">FOR THE BOYS ONLY!</h1></div>
     <div id="bx" data-aos="fade-up">
         <h4>LEARNING ACTIVITY</h4><br>
         <p>Sir Christian</p><br>
